@@ -33,14 +33,13 @@ async function connect() {
     if (ok) {
       status.textContent = 'Connected. Loading Odysseus...';
       status.className = 'status ok';
-      window.location.replace(url);
     } else {
       status.textContent = 'No response at that URL. Check the address and that Odysseus is running.';
       status.className = 'status err';
       connectBtn.disabled = false;
     }
   } catch (e) {
-    status.textContent = 'Error: ' + e;
+    status.textContent = String(e);
     status.className = 'status err';
     connectBtn.disabled = false;
   }
