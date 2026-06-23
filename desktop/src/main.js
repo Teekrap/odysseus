@@ -1,4 +1,4 @@
-import { invoke } from '@tauri-apps/api/core';
+const { invoke } = window.__TAURI__.core;
 
 const urlInput = document.getElementById('url');
 const connectBtn = document.getElementById('connect');
