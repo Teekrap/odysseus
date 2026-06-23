@@ -26,15 +26,15 @@ async function connect() {
     return;
   }
   connectBtn.disabled = true;
-  status.textContent = 'Probing server...';
+  status.textContent = 'Connecting...';
   status.className = 'status';
   try {
     const ok = await invoke('connect', { url });
     if (ok) {
-      status.textContent = 'Connected. Loading Odysseus...';
+      status.textContent = 'Connected. Window opening...';
       status.className = 'status ok';
     } else {
-      status.textContent = 'No response at that URL. Check the address and that Odysseus is running.';
+      status.textContent = 'Failed.';
       status.className = 'status err';
       connectBtn.disabled = false;
     }

@@ -7,18 +7,7 @@
     "frontendDist": "../src"
   },
   "app": {
-    "windows": [
-      {
-        "title": "Odysseus",
-        "width": 1200,
-        "height": 800,
-        "minWidth": 480,
-        "minHeight": 320,
-        "resizable": true,
-        "fullscreen": false,
-        "center": true
-      }
-    ],
+    "windows": [],
     "security": {
       "csp": null,
       "assetProtocol": { "enable": false, "scope": [] }
